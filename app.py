@@ -1,9 +1,10 @@
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
+from audioop import add
+
 from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
-from dotenv import load_dotenv
-from os.path import join, dirname
-import os
-from audioop import add
 
 MONGODB_URI = os.environ.get(
     "mongodb+srv://test:sparta@cluster0.sfozobg.mongodb.net/?retryWrites=true&w=majority")
