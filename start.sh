@@ -9,7 +9,7 @@ if [ ! -d SVIRTUALENV ]; then
 fi
 
 if [ ! -f SVIRTUALENV/bin/pip ]; then
-    curl -silent-show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | SVIRTUALE
+    curl -silent-show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | SVIRTUALENV
 fi
 
 SVIRTUALENV/bin/pip install -r requirements.txt
